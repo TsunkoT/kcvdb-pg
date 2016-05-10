@@ -10,7 +10,7 @@ APIごとにテーブルを分けてPostgreSQLに突っ込みます。
 ## 事前準備
 
 - PostgreSQL で `CREATE DATABASE kcvdb;` しておく
-- 読む込む対象のログファイルリストを作っておく
+- 読む込む対象のログファイルリストを作って本プログラムのディレクトリに配置する
 ```ps1
 $ Get-ChildItem -R .\2016\05\07 | Select-Object FullName > 20160507.filelist.txt
 ```
