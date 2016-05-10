@@ -1,0 +1,17 @@
+group 'kcvdb-pg'
+version '0.1'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile 'org.postgresql:postgresql:9.4.1208'
+}
+
+mainClassName = "kcvdb.pg.LogPgConverter"
