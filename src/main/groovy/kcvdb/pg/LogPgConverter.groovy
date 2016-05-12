@@ -92,7 +92,7 @@ WITH (
 
                             String client = tsv[0]
                             String uuid = tsv[1]
-                            String api_url = tsv[2].substring(tsv[2].indexOf("kcsapi"))
+                            String api_url = tsv[2].substring(tsv[2].indexOf("kcsapi/")) - "kcsapi/"
                             Integer api_status = tsv[3] as Integer
                             Timestamp datetime1 = tsv[4] ? dateFormat.parse(tsv[4]).toTimestamp() : null
                             Timestamp datetime2 = tsv[5] ? dateFormat.parse(tsv[5]).toTimestamp() : null
